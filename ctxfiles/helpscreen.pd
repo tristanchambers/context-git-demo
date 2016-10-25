@@ -1,6 +1,6 @@
-#N canvas 230 172 645 506 10;
-#X obj 114 15 receive \$1-helpdel;
-#X obj 114 39 iemguts/canvasdelete 1;
+#N canvas 227 185 981 602 10;
+#X obj 137 15 receive \$1-helpdel;
+#X obj 137 39 iemguts/canvasdelete 1;
 #X symbolatom 101 101 16 0 0 0 - #0-searchr #0-search, f 16;
 #X obj 201 100 bng 15 250 50 0 \$0-back \$0-nil < 5 8 0 10 -262144
 -1 -1;
