@@ -1,0 +1,10 @@
+#N canvas 758 301 608 338 10;
+#X obj -1 -121 olr \$1 inlet outlet-x outlet-y mouse settings custom
+;
+#X obj 361 -103 presets \$1 :x :y :d :m;
+#X obj 38 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 149 30 ctx inlet~;
+#X obj 216 100 ctx outlet~;
+#X obj 125 129 ctx inlet~;
+#X coords 0 -1 1 1 96 36 2 0 0;

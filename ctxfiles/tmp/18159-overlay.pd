@@ -1,0 +1,17 @@
+#N canvas 758 301 608 338 10;
+#X obj -1 -121 olr \$1 inlet outlet-x outlet-y mouse settings custom
+;
+#X obj -35 -93 list split 1;
+#X obj -1 -65 ols \$1 inlet outlet-x outlet-y mouse settings cutsom
+;
+#X obj 361 -103 presets \$1 :x :y :d :m;
+#X obj 0 12 content :l /home/liam/Documents/PD/Context/2.0/waves/kick-1.wav
+:x1 0 :x2 0.001 :y1 0.000333333 :y2 0.001 :y -1 2;
+#X obj 0 -20 mover;
+#X connect 0 0 1 0;
+#X connect 0 1 2 1;
+#X connect 0 2 2 2;
+#X connect 0 3 2 3;
+#X connect 0 4 2 4;
+#X connect 1 1 2 0;
+#X coords 0 -1 1 1 60 36 2 0 0;

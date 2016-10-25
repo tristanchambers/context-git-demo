@@ -1,0 +1,15 @@
+#N canvas 65 101 450 300 10;
+#X obj 207 162 cyclone/zl nth;
+#X obj 207 140 list;
+#X obj 207 69 inlet;
+#X obj 207 91 t b f;
+#X obj 207 207 outlet;
+#X obj 232 115 r \$1-\$2;
+#X obj 207 185 >= 0;
+#X connect 0 0 6 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 1 0 1;
+#X connect 5 0 1 1;
+#X connect 6 0 4 0;

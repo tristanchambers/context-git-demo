@@ -1,0 +1,4 @@
+#N canvas 548 266 608 338 10;
+#X obj -1 -121 olr \$1 inlet outlet-x outlet-y mouse settings custom
+;
+#X coords 0 -1 1 1 72 36 2 0 0;

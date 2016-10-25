@@ -1,0 +1,30 @@
+#N canvas 444 180 922 528 10;
+#X obj 429 154 context :a ' x1 \\\; x2 \\\; x3 \\\; x4 \\\; x5 ' :b
+' y1 \\\; y2 \\\; y3 \\\; d \\\; e ' :d 1 :e 1 :f 1 :x 1 2 3 4 5 :y
+1 2 3 :ID 4;
+#X text 38 27 NEW MESSAGE SYSTEM:;
+#X obj 603 83 receive c4-;
+#X obj 603 105 print out;
+#X text 37 51 Rather than having one message which is parsed using
+separators \, as in the previous example \, every toggle now has its
+own message. If you start this Context \, you will see them cycle in
+the message box. To edit the message \, click on a particular toggle
+(whether its on or off) and then type into the messge box and press
+enter. While the mouse is hovering over the Context canvas \, you can
+also use the left \, right \, up and down keys to scroll through the
+different message assignments. This should make things much easier!
+;
+#X text 40 196 The properties menu is relevant here. In the MESSAGES
+section (top right) \, the "pattern" and "burst" options need to be
+set to "multiple". They are set this way in this example \, but if
+you create a new Context they will be "single" by default. This means
+that each toggle will send the same message--a simpler setting. To
+toggle between the two modes \, just click on the "multiple" button.
+The "edit button next to it is also useful--you can edit all of the
+messages at once there in a semi-colon separated list.;
+#X text 39 324 One bug I know of: the last toggle (bottom right) doesn't
+fire a message \, only a bang. I'll fix this soon. Other than that
+\, I think it all works and saves properly \, but it won't be compatible
+with the older examples that I sent. The messages won't load properly.
+;
+#X connect 2 0 3 0;
